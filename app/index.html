@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101714">
+  <meta name="description" content="An offline, source-led checklist and roadmap for all 55 GTA VI PlayStation trophies.">
+  <title>Leonida Field Notes — GTA VI Trophy Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="masthead"><div class="brand"><span class="mark">L</span><div><p class="eyebrow">FIELD NOTES / LEONIDA</p><h1>Vice City <em>to 100%</em></h1></div></div><div class="offline"><i></i> OFFLINE GUIDE</div></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">PLAYSTATION 5 · 55 TROPHIES</p><h2>Your route through<br><span>Leonida.</span></h2><p class="intro">A calm, source-led checklist for the long road to platinum. Earned status stays on this device.</p><div class="meter"><div class="meter-label"><strong id="progress">0 / 55 earned</strong><span id="grade-summary"></span></div><div class="track"><span id="progress-bar"></span></div></div></div><aside class="hero-card"><span class="card-label">THE LONG GAME</span><strong id="roadmap-progress">0%</strong><span>roadmap complete</span><button id="roadmap-link" class="text-button">View platinum roadmap ↗</button></aside></section>
+    <nav class="tabs"><button class="tab active" data-view="tracker">Trophy tracker <span>55</span></button><button class="tab" data-view="roadmap">Platinum roadmap</button><span class="tab-note">LOCAL CHECKLIST · NO ACCOUNT</span></nav>
+    <section id="tracker-view">
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Find a trophy" autocomplete="off"></label><label class="select-label">KIND<select id="kind"><option value="all">All kinds</option><option>story</option><option>missable</option><option>collectibles</option><option>activities</option><option>online</option></select></label><label class="select-label">GRADE<select id="grade"><option value="all">All grades</option><option>platinum</option><option>gold</option><option>silver</option><option>bronze</option></select></label><label class="spoiler"><input id="spoilers" type="checkbox"><span class="switch"></span><span>Hide spoilers</span></label></div>
+      <div class="utility"><span id="result-count">Showing 55 trophies</span><div class="utility-actions"><button id="export" class="quiet">Export progress</button><label class="import quiet">Import progress<input id="import" type="file" accept="application/json"></label></div></div>
+      <div class="trophy-grid" id="rows"></div>
+    </section>
+    <section id="roadmap-view" hidden><div class="roadmap-head"><p class="eyebrow">THE PLATINUM ROUTE</p><h2>Four passes through<br><span>the checklist.</span></h2><p>Story first, then the open-world sweep, activity sets, and cleanup. Exact collectible routes are intentionally left open until reliable guides exist.</p></div><div id="roadmap-stages" class="stages"></div><aside class="note"><b>MISSABLES</b><span>Descriptions identify several mission-bound trophies. The published list does not confirm a permanent miss condition; replay or chapter select availability is not verified. Treat these as “check before leaving the activity,” not as confirmed missables.</span></aside></section>
+    <footer><span>LEONIDA FIELD NOTES</span><span>Unofficial guide · built from the published trophy list</span></footer>
+  </main>
+  <dialog id="detail"><button class="close" aria-label="Close">×</button><div id="detail-content"></div></dialog>
+</body>
+</html>
